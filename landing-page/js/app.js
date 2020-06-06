@@ -18,7 +18,7 @@
  *
  */
 
-// sections is an HTMLCollection live and ordered, which does not include spaces.
+// section selector
 const sections = document.getElementsByTagName("section");
 const nav = document.querySelector("#navbar__list");
 /**
@@ -46,7 +46,7 @@ function isTopSectionInViewport(el) {
   );
 }
 
-// simple and perfect helper function taken from https://muffinman.io/javascript-get-element-offset/
+
 function getElementOffset(el) {
   // get the coordinates of the element box from the viewport
   const rect = el.getBoundingClientRect();
